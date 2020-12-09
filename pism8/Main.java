@@ -18,6 +18,23 @@ public class Main {
                 ". Стиль одежды - "+obj3.getStyle()+". Сезон - "+obj3.getSeason()+". Наличие капюшона - "+obj3.getHood());
         System.out.println("Бренд вещь 3: "+obj3.brand(obj3.getPrice(),false));
 
+        Cardigan obj4 = new Cardigan("Трикотажная фабрика Алеся",40.0,"Блуза шёлковая",0);
+        System.out.println("Вещь 4:"+" Производитель - "+obj4.getProducer()+". Цена - "+obj4.getPrice()+
+                ". Стиль одежды - "+obj4.getStyle()+". Длина рукава - "+obj4.getSleeveLength()+ ", % шерсти - "+
+                obj4.getWoolPercent());
+        System.out.println("Бренд вещь 4: "+obj4.brand(obj4.getPrice(),obj4.getWoolPercent()));
+        Cardigan obj5 = new Cardigan("Кашемировые свитера Italy",1000,"Кашемировый свитер кэжуал",
+                55.5,70);
+        System.out.println("Вещь 5:"+" Производитель - "+obj5.getProducer()+". Цена - "+obj5.getPrice()+
+                ". Стиль одежды - "+obj5.getStyle()+". Длина рукава - "+obj5.getSleeveLength()+ ", % шерсти - "+
+                obj5.getWoolPercent());
+        System.out.println("Бренд вещь 5: "+obj5.brand(obj5.getPrice(),obj5.getWoolPercent()));
+        Cardigan obj6 = new Cardigan();
+        System.out.println("Вещь 6:"+" Производитель - "+obj6.getProducer()+". Цена - "+obj6.getPrice()+
+                ". Стиль одежды - "+obj6.getStyle()+". Длина рукава - "+obj6.getSleeveLength()+", % шерсти -"+
+                obj6.getWoolPercent());
+        System.out.println("Бренд вещь 6: "+obj6.brand(obj6.getPrice(),obj6.getWoolPercent()));
+
         Pants obj7 = new Pants();
         System.out.println("Вещь 7:"+" Производитель - "+obj7.getProducer()+". Цена - "+obj7.getPrice()+
                 ". Стиль одежды - "+obj7.getStyle()+". Расклешённость - "+obj7.getFlared());
